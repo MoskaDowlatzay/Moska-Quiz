@@ -52,4 +52,39 @@
     const submitButton = document.getElementById("submit");
     const feedback = document.getElementById("feedback");
     const timeDisplay = document.getElementById("time");
-  
+
+    let currentQuestion = 0;
+    let score = 0;
+    let time = 60; // Initial time in seconds
+    let timerInterval;
+    const questions = [
+      {
+        question: "How many teeth does a human adult have?",
+        choices: ["32", "35", "29", "38"],
+        answer: 0 // Index of the correct answer in the choices array
+      },
+      // Add more questions 
+      {
+        question: "What is the largest internal organ in the human body?",
+        choices: ["liver", "heart", "lungs", "kidneys"],
+        answer: 0 // Index of the correct answer in the choices array
+      },
+
+      question: "What planet gas the most gravity?",
+      choices: ["Jupiter", "saturn", "uranus", "earth"],
+      answer: 0 // Index of the correct answer in the choices array
+    },
+
+    {
+      question: "What colour is a giraffe's tongue?",
+      choices: ["purple", "pink", "blue", "brown"],
+      answer: 0 // Index of the correct answer in the choices array
+    },
+
+    {
+      question: "In which year did the titanic sink?",
+      choices: ["1912", "1935", "1929", "1918"],
+      answer: 0 // Index of the correct answer in the choices array
+    },
+
+  ];
