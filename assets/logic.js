@@ -41,4 +41,8 @@
   // High scores are listed, sorted highest to lowest
   // User has option to take the quiz again
 
+  document.addEventListener("DOMContentLoaded", function() {
+    const highscoresList = document.getElementById("highscores");
+    const clearButton = document.getElementById("clear");
+  
   
