@@ -42,10 +42,14 @@
   // User has option to take the quiz again
 
   document.addEventListener("DOMContentLoaded", function() {
-    const highscoresList = document.getElementById("highscores");
-    const clearButton = document.getElementById("clear");
+    // Get elements from the HTML
+    const startButton = document.getElementById("start");
+    const questionTitle = document.getElementById("question-title");
+    const choicesContainer = document.getElementById("choices");
+    const endScreen = document.getElementById("end-screen");
+    const finalScore = document.getElementById("final-score");
+    const initialsInput = document.getElementById("initials");
+    const submitButton = document.getElementById("submit");
+    const feedback = document.getElementById("feedback");
+    const timeDisplay = document.getElementById("time");
   
-    function displayHighScores() {
-      if (highscoresList) {
-        const highScores = JSON.parse(localStorage.getItem('highScores')) || [];
-    
